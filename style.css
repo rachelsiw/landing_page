@@ -1,0 +1,16 @@
+img {
+    width: 300px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.info-row{
+   
+    display: flex;
+}
