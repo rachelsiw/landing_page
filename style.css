@@ -1,16 +1,133 @@
-img {
-    width: 300px;
+/* Apply to the entire website*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+.container{
+display: flex;
+padding: 0 300px;
+}
+
+/* images*/
+img{
+    width: 200px;
+}
+
+/* navigation bar only */
+ul li {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#nav-id {
+    justify-content: space-between;
 }
 
 ul {
-    list-style: none;
+    display: flex;
+    gap: 40px;
 }
 
-a {
-    text-decoration: none;
+
+/* navigation bar and header only */
+.nav-bar, header {
+    background-color: #1f2937;
+    color: white;
+    height: 420px;
+}
+
+/*header only*/
+
+#header-id {
+    justify-content: space-around;
+}
+
+/* info row section only*/
+
+.info-row-heading{
+margin-top: 60px;
+margin-bottom: 0;
+}
+
+#info-section-id{
+    flex-direction: column;
+    height: 600px;
+    align-items:center;
+  
 }
 
 .info-row{
-   
+    gap: 80px;
+    margin-top: 60px;
     display: flex;
+  }
+
+.info-row-container {
+    width: 200px;
+   display: flex;
+   flex-direction: column;
 }
+
+#info-text{
+    padding-left: 10px;
+}
+
+
+
+
+/* Customer review section only*/
+
+.customer-review{
+    background-color: #e5e7eb;
+    height: 500px;
+    display: flex;
+    font-style: italic;
+}
+
+#customer-review-id {
+    margin: auto;
+    font-size: 30px;
+}
+
+/* Sign up section only*/
+
+.sign-up {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up-box {
+background-color: #3882f6;
+height: 150px;
+width: 1200px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+gap: 30px;
+border-radius: 16px;
+color: aliceblue;
+}
+
+/*footer section only*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+  }
